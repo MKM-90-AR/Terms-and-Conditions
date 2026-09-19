@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وثيقة اتفاقية الاستخدام وحفظ الحقوق والضمانات الرقمية</title>
+    <style>
+        body {
+            background-color: #e0e0e0;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            color: #000;
+        }
+        .page {
+            background-color: #ffffff;
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto;
+            padding: 20mm;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-sizing: border-box;
+            text-align: justify; 
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 16px;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        p.intro {
+            text-indent: 40px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .clause {
+            margin-bottom: 12px;
+            text-indent: -35px; 
+            padding-right: 35px;
+        }
+        .clause span {
+            font-weight: bold;
+            display: inline-block;
+            width: 30px;
+        }
+        .signature-section {
+            margin-top: 40px;
+            page-break-inside: auto;
+        }
+        .signature-declaration {
+            border: 2px solid #000;
+            padding: 15px;
+            background-color: #f9f9f9;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .oath-box {
+            border: 3px double #000;
+            padding: 15px;
+            background-color: #fff;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 12px;
+            text-align: right;
+            font-size: 16px;
+        }
+        th {
+            background-color: #eee;
+            width: 50%;
+        }
+        .financial-table th, .financial-table td {
+            padding: 6px;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .payment-page {
+            direction: rtl;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .payment-header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 3px double #000;
+            padding-bottom: 10px;
+        }
+        .payment-header h2 {
+            font-size: 24px;
+            margin: 0 0 5px 0;
+            border: none;
+            padding: 0;
+        }
+        .payment-header p {
+            margin: 5px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .payment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .payment-table th, .payment-table td {
+            border: 2px solid #000;
+            padding: 8px 5px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .payment-table th {
+            background-color: #e9ecef;
+        }
+        .payment-table td {
+            height: 35px;
+        }
+        .payment-footer {
+            border: 2px solid #000;
+            padding: 15px;
+            background-color: #f9f9f9;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        @page { size: A4 portrait; }
+        
+        @media print {
+            body {
+                background-color: #ffffff;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                width: 100%;
+                margin: 0;
+                padding: 10mm;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .new-page {
+                page-break-before: always;
+            }
+        }
+        .print-btn {
+            display: block;
+            width: 250px;
+            margin: 0 auto 20px auto;
+            padding: 12px 20px;
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            font-family: inherit;
+        }
+        .print-btn:hover {
+            background-color: #1a252f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- زر تنزيل المستند كـ PDF (يختفي تلقائياً عند الطباعة) -->
+    <button class="no-print print-btn" onclick="window.print()">🖨️ طباعة / تنزيل كملف PDF</button>
+
+    <div class="page">
+        <h1>وثيقة اتفاقية الاستخدام وحفظ الحقوق والضمانات الرقمية</h1>
+        <h2>تفعيل الخدمات السحابية والذكاء الاصطناعي (Google AI Pro)</h2>
+
+        <p class="intro">
+            تم تحرير هذه الوثيقة الشاملة من قبل الطرف الأول (مُقدم الخدمة): هاشم عمر حمامي، وتهدف هذه الوثيقة التأسيسية إلى تنظيم عملية تفعيل اشتراك لمدة ثمانية عشر (18) شهراً، وتوضيح كافة البنود التي تضمن حقوق الطرف الثاني (المشترك) في المقام الأول، وتحافظ على خصوصيته التامة، وتضمن عدم المساس ببياناته الشخصية، بالإضافة إلى تنظيم الآلية المالية المعقدة للاتفاق، يرجى قراءة هذه البنود التسعين بتمعن شديد:
+        </p>
+
+        <!-- البنود من 1 إلى 20 -->
+        <div class="clause"><span>1 -</span> يقر الطرف الأول (هاشم عمر حمامي) بأنه لن يقوم تحت أي ظرف من الظروف بطلب كلمة المرور الخاصة بحساب الطرف الثاني.</div>
+        <div class="clause"><span>2 -</span> هذه الاتفاقية تضمن بشكل قاطع ومطلق أن تفعيل الاشتراك يتم حصرياً عبر رابط تفعيل آمن وخاص ولا يحتاج لأي بيانات حساسة.</div>
+        <div class="clause"><span>3 -</span> لا يحق للطرف الأول التدخل في إعدادات الحساب الشخصي للطرف الثاني بأي شكل من الأشكال أو محاولة تعديلها.</div>
+        <div class="clause"><span>4 -</span> يوضح الطرف الأول أن المحادثات مشفرة أثناء انتقالها (In transit) وتخزينها (At rest)، ولكن لغرض تحسين الذكاء الاصطناعي، قد تقوم جوجل باختيار عينات عشوائية ليقوم مُراجعون بشر بقراءتها بعد فصلها عن حسابك. لذا يُمنع وتُحذر جوجل من مشاركة أي معلومات حساسة (مثل كلمات المرور، أرقام البطاقات، أو أسرار العمل).</div>
+        <div class="clause"><span>5 -</span> لا يمتلك الطرف الأول أي صلاحية تقنية أو برمجية تتيح له الاطلاع على نصوص المحادثات أو الصور المرفوعة.</div>
+        <div class="clause"><span>6 -</span> يلتزم الطرف الأول التزاماً تاماً بأن الحساب يبقى ملكية فردية وحصرية للطرف الثاني دون أي منازعة مستقبلية.</div>
+        <div class="clause"><span>7 -</span> عملية التفعيل لا تتطلب إرسال أي رموز تحقق (OTP) للطرف الأول، مما يعزز من حماية حساب المشترك.</div>
+        <div class="clause"><span>8 -</span> يؤكد الطرف الأول أن الغاية الوحيدة من هذا الرابط هي تفعيل ميزات (Google AI Pro) بصورة قانونية وآمنة.</div>
+        <div class="clause"><span>9 -</span> يضمن الطرف الأول عدم قدرته على تتبع الموقع الجغرافي أو المعرف الرقمي (IP) الخاص بالطرف الثاني.</div>
+        <div class="clause"><span>10 -</span> في حال وجود أي مخاوف أمنية لدى الطرف الثاني، فإن هذه الوثيقة تعتبر بمثابة إقرار قانوني وعرفي بأن الحساب آمن بنسبة 100%.</div>
+        <div class="clause"><span>11 -</span> لا توجد أي برمجيات خبيثة أو ملفات تتبع أو سجلات ارتباط مرتبطة برابط التفعيل المقدم من قبل (هاشم عمر حمامي).</div>
+        <div class="clause"><span>12 -</span> يحق للطرف الثاني استخدام الاشتراك في جميع الأغراض الشخصية والعملية والدراسية دون أي قيود من طرفنا.</div>
+        <div class="clause"><span>13 -</span> يقر الطرف الأول أن الاشتراك فعال على خوادم آمنة ولا يعتمد على خوادم وسيطة قد تهدد أمان البيانات أو تسربها.</div>
+        <div class="clause"><span>14 -</span> يمنع منعاً باتاً من قبلنا محاولة تسجيل الدخول إلى حساب الطرف الثاني، ويعتبر هذا البند صمام أمان للمشترك.</div>
+        <div class="clause"><span>15 -</span> يحصل الطرف الثاني على كامل الميزات المتاحة في منطقته الجغرافية دون أي حجب أو تقييد مقصود.</div>
+        <div class="clause"><span>16 -</span> سوف يتم مشاركة رابط تفعيل خاص معك، وبمجرد الدخول على هذا الرابط وتفعيل الخطة، سوف تحصل على اشتراك مدته 18 شهراً متواصلة على حسابك الشخصي.</div>
+        <div class="clause"><span>17 -</span> إن مدة الاشتراك المتفق عليها هي 18 شهراً كاملة، وتبدأ فعلياً وحسابياً من لحظة النقر على رابط التفعيل المرسل.</div>
+        <div class="clause"><span>18 -</span> يتيح الطرف الأول خيارات دفع مالية مرنة تهدف إلى التسهيل على المشترك وفقاً لقدرته المالية والسيولة النقدية.</div>
+        <div class="clause"><span>19 -</span> يُمنع منعاً باتاً ولا يحق لك كطرف ثاني بيع هذا الرابط الذي تم تسليمه لك لأي شخص أو جهة أخرى تحت أي ظرف.</div>
+        <div class="clause"><span>20 -</span> لا يحق لك مطلقاً تأجيل تفعيل هذا الرابط بعد استلامه؛ ولو تم تأجيل تفعيل هذا الرابط من قبلك ولم يتفاعل معك أو انتهت صلاحيته، فأنت ملزم إجبارياً بدفع جميع المبلغ المتفق عليه، لأنني أعطيتك الرابط مفعلاً ويعمل، ولكنك أنت من تأخرت في استغلاله والخطأ يقع عليك.</div>
+
+        <!-- البنود من 21 إلى 40 -->
+        <div class="clause"><span>21 -</span> الخيار المالي الأول المتاح: الدفع الفوري لمرة واحدة بمبلغ إجمالي وقدره سبعة (7) دنانير أردنية فقط لا غير.</div>
+        <div class="clause"><span>22 -</span> الخيار المالي الثاني المتاح: نظام الدفعتين، حيث يتم دفع ثمانية (8) دنانير مقسمة على دفعتين، بواقع أربعة دنانير لكل أسبوع متتالي.</div>
+        <div class="clause"><span>23 -</span> الخيار المالي الثالث المتاح: نظام الدفعات اليومية المصغرة، والذي يمتد زمنياً لفترة 18 دفعة منفصلة.</div>
+        <div class="clause"><span>24 -</span> في الخيار الثالث تحديداً، يلتزم الطرف الثاني بدفع مبلغ وقدره نصف دينار أردني (0.50) بشكل يومي دون تأخير.</div>
+        <div class="clause"><span>25 -</span> يُستثنى من الدفع اليومي الإلزامي في الخيار الثالث يوما الجمعة والسبت، كنوع من التسهيل الإضافي للمشترك.</div>
+        <div class="clause"><span>26 -</span> يمنع منعاً باتاً وقاطعاً قيام الطرف الثاني بمشاركة الحساب الذي تم تفعيل الاشتراك عليه مع أي أفراد آخرين سواء كانوا عائلة أو أصدقاء.</div>
+        <div class="clause"><span>27 -</span> يعتبر مشاركة الحساب إخلالاً جوهرياً بضوابط الأداء العالي للذكاء الاصطناعي، ولذلك فهو محظور تماماً ويستوجب المساءلة.</div>
+        <div class="clause"><span>28 -</span> يُحظر على الطرف الثاني حظراً كلياً القيام ببيع الحساب المفعّل لأي طرف ثالث بأي شكل من الأشكال.</div>
+        <div class="clause"><span>29 -</span> يقر الطرف الثاني ويصرح بأن هذا الاشتراك هو للاستخدام الفردي والشخصي الحصري فقط لا غير، ولا يجوز تحويله للغير.</div>
+        <div class="clause"><span>30 -</span> يؤكد الطرف الأول مجدداً وبشكل لا لبس فيه أن حسابك في أمان تام، وأن التفعيل لا يشمل أي مزامنة لجهات الاتصال.</div>
+        <div class="clause"><span>31 -</span> أي محاولة لبيع الحساب تعتبر باطلة بطلاناً مطلقاً، ولا يتحمل الطرف الأول أي مسؤولية فنية أو قانونية حيال ذلك.</div>
+        <div class="clause"><span>32 -</span> في حال التأخر غير المتعمد عن سداد الدفعات المستحقة، يقر الطرف الأول بوجود مساحة من المسامحة المالية كفترة سماح.</div>
+        <div class="clause"><span>33 -</span> لا يحق للطرف الأول التدخل من قريب أو بعيد في اختيارك للبيانات أو الأسئلة التي تشاركها مع الذكاء الاصطناعي، فالخصوصية أولوية.</div>
+        <div class="clause"><span>34 -</span> يُمنح الطرف الثاني الحق الأصيل في الحصول على خصومات مالية فردية استثنائية وفقاً للجهود التسويقية.</div>
+        <div class="clause"><span>35 -</span> يتم تطبيق الخصومات المالية أو التعويضات النقدية المباشرة في حال قام الطرف الثاني بإحضار زبائن جدد للاشتراك في الخدمة.</div>
+        <div class="clause"><span>36 -</span> تعتبر عملية التسويق بالعمولة وإحضار زبائن طريقة معتمدة ورسمية لتخفيف العبء المالي عن الطرف الثاني.</div>
+        <div class="clause"><span>37 -</span> يعود الطرف الأول للتأكيد على أن رابط التفعيل التقني لا يطلب ولن يطلب أي أذونات للوصول إلى الكاميرا أو الميكروفون.</div>
+        <div class="clause"><span>38 -</span> يقر الطرف الأول (هاشم عمر حمامي) بأنه تقنياً وبرمجياً لا يمتلك أي قدرة أو صلاحية لسحب أو إيقاف الاشتراك من حساب الطرف الثاني بمجرد تفعيله.</div>
+        <div class="clause"><span>39 -</span> بناءً على البند السابق، وبما أن الطرف الأول لا يستطيع استرداد الخدمة تقنياً، فإن الطرف الثاني ملزم دينياً وأخلاقياً وعرفياً وقانونياً بسداد المستحقات.</div>
+        <div class="clause"><span>40 -</span> في حال التهرب من الدفع، فإن الطرف الأول (هاشم عمر حمامي) سيقف أمام الطرف الثاني يوم القيامة للمطالبة بحقه الشرعي والمالي كاملاً أمام الله عز وجل.</div>
+        
+        <!-- البنود من 41 إلى 55 -->
+        <div class="clause"><span>41 -</span> توضيحاً للمحددات التقنية للاشتراك، ينحصر استحقاق التعويض المالي حصراً في حالة انقطاع الاشتراك تلقائياً من المصدر دون أي إلغاء يدوي من المشترك، حيث يُعوّض المشترك بثلاثة (3) دنانير أردنية إذا حدث الانقطاع التلقائي خلال الشهر الأول من التفعيل.</div>
+        <div class="clause"><span>42 -</span> استناداً للجدولة الزمنية، إذا حدث انقطاع تقني وتوقف تلقائي من النظام خلال الشهر الثاني الفعلي، فإن التعويض المالي ينخفض ليبلغ ديناراً ونصف الدينار (1.5) فقط لا غير.</div>
+        <div class="clause"><span>43 -</span> فور انتهاء الشهر الثاني الفعلي والدخول في الشهر الثالث وما يليه، تسقط كافة حقوق الطرف الثاني نهائياً وبلا رجعة في المطالبة بأي تعويض مالي، ولا يحق له بتاتاً المطالبة باشتراك جديد مجاني حتى لو توقفت الخدمة تلقائياً.</div>
+        <div class="clause"><span>44 -</span> على النقيض التام مما سبق، إذا استلم المشترك الحساب يعمل بكفاءة وقرر من تلقاء نفسه إلغاء الخدمة يدوياً أو أهمل الحساب، فإنه يُلزم إلزاماً تاماً بدفع كامل المبلغ المتبقي، ولا يحق له استرداد أي أموال.</div>
+        <div class="clause"><span>45 -</span> لو تم إلغاء الاشتراك وادعى الطرف الثاني أنه أُلغي بشكل تلقائي وليس بشكل يدوي، فيجب على الطرف الأول (هاشم عمر حمامي) أن يرى بنفسه ويدخل على الحساب من جهاز الطرف الثاني أو من أي جهاز آخر، لكي يتأكد ويفحص السجلات التقنية بنفسه ليثبت أن إلغاء الاشتراك كان تلقائياً وليس يدوياً.</div>
+        <div class="clause"><span>46 -</span> يحتفظ الطرف الأول بالحق في أن يتفاوض معك مستقبلاً على تجديد الحساب أو فتح اشتراك جديد في حال تم إلغاء الاشتراك الحالي لأي سبب.</div>
+        <div class="clause"><span>47 -</span> لا يحق للطرف الثاني محاولة تعديل أو تغيير أو التفاوض المتأخر على المبلغ الإجمالي الذي تم الاتفاق عليه مسبقاً.</div>
+        <div class="clause"><span>48 -</span> على سبيل المثال، إذا تم الاتفاق على مبلغ تسع دنانير ونصف كإجمالي مستحق، فلا يحق للطرف الثاني المطالبة بدفع ثمانية دنانير بدلاً من تسع دنانير ونصف.</div>
+        <div class="clause"><span>49 -</span> يجب الالتزام بالمبلغ المتفق عليه نصاً وروحاً دون أي محاولات لتخفيض السعر بعد إتمام التفعيل.</div>
+        <div class="clause"><span>50 -</span> جميع هذه البنود وُضعت خصيصاً لضمان بقاء حسابك الشخصي مستقلاً تماماً عن أي تدخل خارجي ومرتاحاً من القلق.</div>
+        <div class="clause"><span>51 -</span> أي نصوص أو أبحاث يتم إنشاؤها بواسطة الذكاء الاصطناعي تبقى محفوظة حصرياً في أرشيفك الشخصي.</div>
+        <div class="clause"><span>52 -</span> التأخير المبرر في الدفع مسموح به ضمن إطار "المسامحة المالية" ولكن التهرب التام يترتب عليه مطالبة يوم القيامة.</div>
+        <div class="clause"><span>53 -</span> لا يحق للشخص (الطرف الثاني) بعد إتمام عملية الشراء أن يقول لأصدقائه أو معارفه أن هناك اشتراكاً يباع بسعر أرخص من السعر الذي حصل عليه عندي.</div>
+        <div class="clause"><span>54 -</span> مكافآت إحضار الزبائن الجدد حق مكتسب يتم تطبيقه فور تأكيد اشتراك الزبون الجديد واستلام الدفعة.</div>
+        <div class="clause"><span>55 -</span> هذه الوثيقة تعتبر ضامنة لحقوق المشترك في المقام الأول من حيث الأمان الرقمي التام.</div>
+        
+        <!-- البنود من 56 إلى 70 -->
+        <div class="clause"><span>56 -</span> لا يحق للطرف الثاني أو الطرف الأول بأي حال من الأحوال التبليغ عن الطرف الآخر أو رفع أي شكوى طالما لم يتم مخالفة أي شرط من هذه الشروط، وفي حال المخالفة فقط يحق للطرف المتضرر المطالبة بحقوقه.</div>
+        <div class="clause"><span>57 -</span> يُلزم الطرف الثاني إلزاماً قطعياً وإجبارياً بعدم الإساءة لسمعة الطرف الأول (هاشم عمر حمامي) أو التشهير به بأي وسيلة كانت، ويعتبر بند "عدم إساءة السمعة" شرطاً جوهرياً لا تهاون فيه.</div>
+        <div class="clause"><span>58 -</span> لا يحق لأي شخص (الطرف الثاني) تحت أي ظرف القيام برفع شكوى مدرسية، أو شكوى عسكرية، أو شكوى عرفية وعشائرية (التي تخص العوائل)، أو في قسم الشرطة، أو أي مكان تابع للحكومة، طالما لم يتم مخالفة الشروط والأحكام من قبل الطرف الأول.</div>
+        <div class="clause"><span>59 -</span> لو تم رفع شكوى على الطرف الأول بواحدة من الأمور التي ذُكرت في البند السابق أو شيء آخر، ولم يتم إثبات مخالفة الشروط والأحكام من قبل الطرف الأول، فإن الطرف الأول يستطيع تلقائياً المطالبة بإلغاء الاشتراك وسحبه، ويستطيع المطالبة بتعويض مالي ضخم أو تعويض بطريقة أخرى رداً على الشكوى الكيدية.</div>
+        <div class="clause"><span>60 -</span> يقر الطرف الثاني بحق الطرف الأول في تقديم تسعيرات وعروض مختلفة للزبائن، حيث يحق له إعطاء سعر محدد للطرف الثاني وسعر مختلف (أعلى أو أقل) لزبون آخر، ولا يحق للطرف الثاني الاعتراض على ذلك.</div>
+        <div class="clause"><span>61 -</span> يحتفظ الطرف الأول بالحق الكامل والمطلق في طلب مبلغ مالي أعلى للاشتراك أو تعديل تسعيرة الخدمات متى ما رأى ذلك مناسباً، ويوافق الطرف الثاني على هذا الحق.</div>
+        <div class="clause"><span>62 -</span> في حال قام الطرف الأول بمنح الطرف الثاني سعراً مغرياً وحصرياً، واشترط عليه صراحة "عدم إخبار أحد"، فإن الطرف الثاني يُصبح مجبراً وملزماً بالقانون والعرف والأخلاق بكتمان هذا السعر وعدم الإفصاح عنه نهائياً لأي شخص.</div>
+        <div class="clause"><span>63 -</span> تُقرأ هذه الوثيقة ككتلة واحدة متكاملة، ولا يجوز تجزئة بنودها التسعين أو قبول بعضها ورفض البعض الآخر.</div>
+        <div class="clause"><span>64 -</span> أي مخالفة للقوانين والشروط من قبل الطرف الثاني (المشتري)، تمنح الطرف الأول (هاشم عمر حمامي) الصلاحية لزيادة المبلغ عليه، أو حتى المطالبة بمبلغ تعويضي إضافي حتى ولو كان المشتري قد أتم الدفع الكامل مسبقاً.</div>
+        <div class="clause"><span>65 -</span> تعتبر التواقيع المدرجة في نهاية هذه الوثيقة إقراراً تاماً بقراءة البنود التسعين من أولها لآخرها.</div>
+        <div class="clause"><span>66 -</span> أي خلل تقني من مصدر الشركة الأم (Google) لا يقع ضمن مسؤولية الطرف الأول المباشرة.</div>
+        <div class="clause"><span>67 -</span> يضمن الطرف الأول استمرارية عمل الرابط في حال تم استخدامه بالطريقة الصحيحة دون التلاعب به.</div>
+        <div class="clause"><span>68 -</span> تعد هذه الوثيقة ملزمة للطرفين فور بدء الاستخدام والنقر على الرابط، وتعتبر الكلمة الفصل في أي نزاع.</div>
+        <div class="clause"><span>69 -</span> لا يحق للشخص (الطرف الثاني) بعد عملية الشراء والتوقيع أن يقول "أنا لم أقرأ البنود" أو "أنت ضحكت علي أو استغليتني" لأن قبل التوقيع بالضبط يوجد نص يؤكد أنك قرأته وفهمته، وأنا (الطرف الأول) خارج المسؤولية القانونية، والخطأ يقع عليك وليس عليّ لأنك لم تستثمر وقتك لقراءة الوثيقة.</div>
+        <div class="clause"><span>70 -</span> بمجرد كتابة الاسم والتوقيع أدناه، يعتبر الطرف الثاني قد وافق موافقة ضمنية وقطعية على كافة البنود الـ 90 المذكورة في هذه الوثيقة دون أي استثناء.</div>
+
+        <!-- البنود من 71 إلى 90 -->
+        <div class="clause"><span>71 -</span> يحتفظ الطرف الأول بالحق المطلق في تعديل، أو تغيير، أو تحديث أي من الشروط والأحكام الواردة في هذه الوثيقة في أي وقت يراه مناسباً، شريطة ألا يتسبب هذا التعديل بضرر مباشر وجوهري على حقوق الاستخدام الأساسية للطرف الثاني.</div>
+        <div class="clause"><span>72 -</span> يحق للطرف الأول بشكل منفرد إضافة بنود جديدة إلى هذه الوثيقة أو حذف بنود قائمة منها، بما يتوافق مع مقتضيات المصلحة الخاصة به واستمرارية تقديم الخدمة.</div>
+        <div class="clause"><span>73 -</span> يحق للطرف الأول إشعار الطرف الثاني بالبنود التي ستتغير قبل تغييرها، ولا يحق للطرف الثاني رفض هذه التعديلات بأي شكل من الأشكال، إلا في حالة واحدة فقط وهي أن يتم الرفض بشكل جماعي يساوي 30% أو أكثر من إجمالي الأشخاص الذين أخذوا الاشتراك من الطرف الأول، وفيما عدا ذلك تعتبر التعديلات سارية ومُلزمة فوراً.</div>
+        <div class="clause"><span>74 -</span> يمنع منعاً باتاً ولا يحق للطرف الثاني مجادلتي (الطرف الأول) أو النقاش والاعتراض على أي بند من البنود التسعين المذكورة في هذه الوثيقة بعد القيام بكتابة الاسم والتوقيع.</div>
+        <div class="clause"><span>75 -</span> يقر الطرف الثاني ويوافق على أنه ستتم معاملات خاصة لبعض الأشخاص (المشتركين)، سواء كانت هذه المعاملات إيجابية كامتيازات وتساهلات إضافية، أو سلبية كإجراءات صارمة، وفقاً لتقييم وتقدير الطرف الأول المستقل لحالة كل زبون.</div>
+        <div class="clause"><span>76 -</span> أي أمور أو تسويات أو تفاصيل يتم الاتفاق عليها بين الطرفين على أن تبقى "سرية"، فإن الطرف الثاني مجبر وملزم بموجب القانون والعرف والأخلاق بالحفاظ على سريتها التامة وعدم إفشائها لأي شخص كائناً من كان.</div>
+        <div class="clause"><span>77 -</span> يُقر الطرف الثاني بأن النسخة الرقمية من هذه الوثيقة تحمل ذات الحجية القانونية المطلقة التي تحملها النسخة الورقية، وتُعتمد كدليل قاطع في حال نشوب أي نزاع.</div>
+        <div class="clause"><span>78 -</span> إن الجهل بقراءة هذه البنود أو عدم استيعابها بالشكل الصحيح من قبل الطرف الثاني لا يعفيه مطلقاً من تحمل كافة التبعات والمسؤوليات القانونية والمالية والأخلاقية.</div>
+        <div class="clause"><span>79 -</span> في حال تقرر بطلان أو عدم قابلية تنفيذ أي بند من بنود هذه الوثيقة لأي سبب، فإن ذلك لا يؤثر بأي شكل على صحة ونفاذ البنود التسعة والثمانين (89) الأخرى.</div>
+        <div class="clause"><span>80 -</span> وحرصاً من الطرف الأول (هاشم عمر حمامي) على توفير أقصى درجات الاستقلالية والخصوصية الرقمية للطرف الثاني، وبناءً على طلبات الخصوصية العالمية، فإن الطرف الأول يرفع يده تماماً عن أي وصول أو تحكم داخلي للحساب بمجرد التفعيل.</div>
+        <div class="clause"><span>81 -</span> وبناءً على البند السابق الذي يحمي استقلاليتك التامة من تدخلي، فإن الطرف الأول ليس له أي علاقة أو مسؤولية قانونية أو فنية في حال تم فقدان الحساب بسبب الاختراق من جهات خارجية أو إهمال المشترك.</div>
+        <div class="clause"><span>82 -</span> وتأكيداً على حماية بياناتك وعدم احتفاظي بأي مفاتيح دخول احتياطية يمكن أن تهدد خصوصيتك، فإنه في حال نسيانك لكلمة السر (Password) أو البريد الإلكتروني (Email)، فإن الطرف الأول غير مسؤول نهائياً عن استرجاعه.</div>
+        <div class="clause"><span>83 -</span> لا يتحمل الطرف الأول أي مسؤولية في حال عدم مقدرة الطرف الثاني على الدخول إلى حسابه لأي سبب تقني ناتج عن جهازه أو نسيانه لبياناته الشخصية، حيث تُرك الحساب حراً بالكامل تحت تصرفه.</div>
+        <div class="clause"><span>84 -</span> في حال ضياع الحساب أو فقدان الوصول إليه وفقاً للبنود السابقة، فإن هذا لا يلغي الالتزام المالي أبداً، ويبقى الطرف الثاني ملزماً بدفع كامل الدفعات والأقساط المتبقية نظراً لأن الطرف الأول قد أدى الأمانة وسلم الاشتراك كاملاً في حينه.</div>
+        <div class="clause"><span>85 -</span> لتأكيد حريتك المطلقة في استخدام الذكاء الاصطناعي دون رقابة أو توجيه مني، فإن الطرف الأول ليس له أي علاقة أو مسؤولية إذا تم حظر (تبنيد) حسابك أو تعليقه من قبل شركة (Google) بسبب سوء الاستخدام أو مخالفة سياساتهم.</div>
+        <div class="clause"><span>86 -</span> وبالمثل، إذا تم حذف حسابك على (Google) بالكامل من جذوره سواء بخطأ منك أو بقرار حاسم من الشركة، فإن الطرف الأول بريء من أي تعويض مالي ويبقى حقه المالي محفوظاً.</div>
+        <div class="clause"><span>87 -</span> صُممت هذه البنود الصارمة (80-86) لكي يطمئن الطرف الثاني بأن الطرف الأول لا يملك "باباً خلفياً" للتحكم بحسابه، مما يضع مسؤولية الحفاظ على أمان الحساب ونشاطه على عاتق المشترك وحده لضمان استقلاليته.</div>
+        <div class="clause"><span>88 -</span> أي محاولة من الطرف الثاني لتحميل الطرف الأول مسؤولية فقدان الحساب أو الحظر أو النسيان، تعتبر محاولة للتهرب المالي وخرقاً صريحاً للاتفاق يوجب التعويض الفوري.</div>
+        <div class="clause"><span>89 -</span> هذه الضمانات الخالصة صُممت لتكون درعاً يحمي خصوصيتك وحريتك الرقمية، وفي ذات اللحظة فهي تحفظ حقي المالي من أي حجج أو أعذار قد تُطرح لاحقاً.</div>
+        <div class="clause"><span>90 -</span> تعتبر هذه الوثيقة ببنودها التسعين عقداً إلزامياً شاملاً، وسيفاً قانونياً مسلطاً يغلق كافة الثغرات، ومجرد الاستمرار في استخدام الخدمة يُعد إقراراً مستمراً بالرضا التام عنها.</div>
+
+        <!-- تم إضافة كلاس new-page لجعل هذا القسم يبدأ في صفحة منفصلة عند حفظ الـ PDF -->
+        <div class="signature-section new-page">
+            
+            <div class="oath-box">
+                أقسم بالله العلي العظيم رب العرش العظيم أنني لن ألغي الاشتراك بشكل يدوي، وأنني سألتزم التزاماً تاماً بجميع البنود التسعين المذكورة في هذه الوثيقة.
+            </div>
+
+            <div class="signature-declaration">
+                أقر أنا الموقع أدناه، وبكامل قواي العقلية والمسؤولية القانونية، بأنني بمجرد كتابة اسمي وتوقيعي في إحدى الخانات التالية، فإنني أوافق موافقة قطعية ونهائية لا رجعة فيها على جميع البنود الـ 90 المذكورة أعلاه، وأقر بأنني قد قرأتها وفهمتها فهماً نافياً للجهالة، ولا يحق لي الطعن فيها أو التذرع بعدم قراءتها مستقبلاً. كما أقر بأن "سجل متابعة وسداد الدفعات المالية" المرفق في الصفحة التالية يعتبر ملحقاً إلزامياً وجزءاً لا يتجزأ من هذه الوثيقة لتوثيق الجانب المالي.
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 8%; text-align: center;">الرقم</th>
+                        <th style="width: 38%;">الاسم الرباعي</th>
+                        <th style="width: 27%; text-align: center;">التوقيع</th>
+                        <th style="width: 27%; text-align: center;">البصمة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- توليد 25 خانة مرقمة -->
+                    <tr><td style="text-align: center;">1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">7</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">8</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">9</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">11</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">12</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">13</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">14</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">15</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">16</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">17</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">18</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">19</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">20</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">21</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">22</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">23</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">24</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td style="text-align: center;">25</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div> <!-- إغلاق صفحة الشروط الرئيسية هنا لإصلاح مشكلة التنسيق والانكماش -->
+
+    <!-- صفحة السجل المالي (مستقلة وبحجم مثالي) -->
+    <div class="page new-page payment-page">
+        <div class="payment-header">
+            <h2>سجل متابعة وسداد الدفعات المالية</h2>
+            <p>وثيقة توثيق سداد الأقساط والمخالصات المالية المتبادلة بين الأطراف</p>
+            <p style="font-size: 14px; color: #555;">(هذا السجل هو ملحق إلزامي وجزء لا يتجزأ من وثيقة الشروط والأحكام المكونة من 90 بنداً)</p>
+        </div>
+        
+        <!-- استخدام جدول مخفي الحواف لضمان ترتيب الكلمات وعدم تداخلها عند الطباعة -->
+        <table style="width: 100%; margin-bottom: 25px; border: none; font-size: 16px; font-weight: bold; line-height: 2.2;">
+            <tr>
+                <td style="border: none; text-align: right; width: 55%;">الاسم الرباعي: ...................................................................</td>
+                <td style="border: none; text-align: right; width: 45%;">إجمالي المبلغ المطلوب: .................... د.أ</td>
+            </tr>
+            <tr>
+                <td style="border: none; text-align: right;">رقم الهاتف: ......................................................................</td>
+                <td style="border: none; text-align: right;">تاريخ بدء السداد: ...... / ...... / 2026 م</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="border: none; text-align: right; padding-top: 20px;">
+                    <div style="display: flex; align-items: center; justify-content: flex-start; font-size: 17px; gap: 15px;">
+                        
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <strong>نظام الدفع:</strong> 
+                            <label style="display: flex; align-items: center; cursor: pointer; gap: 6px;">
+                                <input type="radio" name="pay_sys" style="transform: scale(1.4); margin: 0;"> أقساط
+                            </label>
+                            <label style="display: flex; align-items: center; cursor: pointer; gap: 6px; margin-right: 10px;">
+                                <input type="radio" name="pay_sys" style="transform: scale(1.4); margin: 0;"> دفعة كاملة
+                            </label>
+                        </div>
+
+                        <div style="width: 2px; height: 22px; background-color: #000; margin: 0 15px;"></div>
+
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <strong>طريقة الدفع:</strong> 
+                            <label style="display: flex; align-items: center; cursor: pointer; gap: 6px;">
+                                <input type="radio" name="pay_method" style="transform: scale(1.4); margin: 0;"> كاش (نقداً)
+                            </label>
+                            <label style="display: flex; align-items: center; cursor: pointer; gap: 6px; margin-right: 10px;">
+                                <input type="radio" name="pay_method" style="transform: scale(1.4); margin: 0;"> إيكليك (CliQ)
+                            </label>
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="payment-table">
+            <thead>
+                <tr>
+                    <th style="width: 12%">رقم الدفعة</th>
+                    <th style="width: 16%">تاريخ الدفع</th>
+                    <th style="width: 14%">المبلغ المدفوع</th>
+                    <th style="width: 14%">المبلغ المتبقي</th>
+                    <th style="width: 22%">توقيع المُسلِّم (أنه سلَّم)</th>
+                    <th style="width: 22%">توقيع المستلم (أنني استلمت)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>الدفعة الأولى (1)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة الثانية (2)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة الثالثة (3)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة الرابعة (4)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة الخامسة (5)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة السادسة (6)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة السابعة (7)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة الثامنة (8)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة التاسعة (9)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة العاشرة (10)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة 11</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة 12</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة 13</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة 14</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة 15</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة 16</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة 17</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>الدفعة 18</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>احتياط الدفعة (19)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>احتياط الدفعة (20)</td><td dir="ltr" style="font-weight: normal;">2026 / .... / ....</td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+
+        <div class="payment-footer">
+                <strong>إقرار واعتماد:</strong> يقر الأطراف المذكورون أعلاه بصحة المبالغ والبيانات المدونة في هذا السجل، ويُعد توقيع المستلم على كل دفعة بمثابة سند إبراء ذمة رسمي ونهائي للطرف المُسلِّم عن قيمة تلك الدفعة المحددة فقط وتاريخها المسجل.
+            </div>
+            
+            <div style="text-align: left; font-size: 12px; margin-top: 10px; font-weight: bold;">
+                سند متابعة الأقساط والدفعات المالية - وثيقة رسمية معتمدة ملحقة
+            </div>
+        </div>
+
+</body>
+</html>
